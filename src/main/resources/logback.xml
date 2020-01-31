@@ -1,0 +1,18 @@
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%level / %d - [%thread] %logger - %message%n%xException</pattern>
+        </encoder>
+    </appender>
+
+    <!--
+      The logger name is typically the Java package name.
+      This configures the log level to log at for a package and its children packages.
+      <logger name="application" level="DEBUG" />
+    -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>
